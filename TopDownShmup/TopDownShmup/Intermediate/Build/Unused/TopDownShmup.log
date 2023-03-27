@@ -1,7 +1,4 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\jmfra\AppData\Local\UnrealBuildTool\Log.txt
-  Invalidating makefile for TopDownShmupEditor (working set of source files changed)
-  Parsing headers for TopDownShmupEditor
-    Running UnrealHeaderTool "C:\Users\jmfra\Documents\FirstRepo\TopDownShmup\TopDownShmup\TopDownShmup.uproject" "C:\Users\jmfra\Documents\FirstRepo\TopDownShmup\TopDownShmup\Intermediate\Build\Win64\TopDownShmupEditor\Development\TopDownShmupEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\jmfra\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-C:/Users/jmfra/Documents/FirstRepo/TopDownShmup/TopDownShmup/Source/TopDownShmup/Weapon.h(15): error : BlueprintReadOnly should not be used on private members
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\Build.bat" TopDownShmupEditor Win64 Development -Project="C:\Users\jmfra\Documents\FirstRepo\TopDownShmup\TopDownShmup\TopDownShmup.uproject" -WaitMutex -FromMsBuild" exited with code 6.
+  Target is up to date
+  Total execution time: 0.72 seconds

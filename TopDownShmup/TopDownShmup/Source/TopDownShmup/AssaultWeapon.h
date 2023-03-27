@@ -17,7 +17,7 @@ UCLASS()
 class TOPDOWNSHMUP_API AAssaultWeapon : public AWeapon
 {
 	GENERATED_BODY()
-	
+
 	virtual void OnStartFire() override;
 	virtual void OnStopFire() override;
 };
