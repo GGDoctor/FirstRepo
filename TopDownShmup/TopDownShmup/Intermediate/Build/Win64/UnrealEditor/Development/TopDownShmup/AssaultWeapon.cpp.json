@@ -1,0 +1,17 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\source\\topdownshmup\\assaultweapon.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\topdownshmupeditor\\development\\engine\\sharedpch.engine.h.pch",
+        "Includes": [
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\development\\topdownshmup\\definitions.topdownshmup.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\source\\topdownshmup\\assaultweapon.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\source\\topdownshmup\\weapon.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\inc\\topdownshmup\\weapon.generated.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\inc\\topdownshmup\\assaultweapon.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

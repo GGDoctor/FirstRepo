@@ -11,6 +11,11 @@ class ATopDownShmupPlayerController : public APlayerController
 public:
 	ATopDownShmupPlayerController();
 
+	void MoveForward(float Value);
+	void MoveRight(float Value);
+
+	void UpdateMouseLook();
+
 protected:
 	/** True if the controlled character should navigate to the mouse cursor. */
 	uint32 bMoveToMouseCursor : 1;
