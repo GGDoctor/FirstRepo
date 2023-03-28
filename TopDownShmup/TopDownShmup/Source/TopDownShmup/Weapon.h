@@ -11,9 +11,10 @@ class TOPDOWNSHMUP_API AWeapon : public AActor
 {
 	GENERATED_BODY()
 
+public:
 	//When starting Unreal it says this does not work and both the VisibleDefault and BlueprintReadOnly are issues.
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category=Weapon)
-		USkeletalMeshComponent* WeaponMesh;
+	USkeletalMeshComponent* WeaponMesh;
 public:	
 	// Sets default values for this actor's properties
 	AWeapon();

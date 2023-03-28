@@ -1,0 +1,23 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\inc\\topdownshmup\\topdownshmupcharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\topdownshmupeditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.h.pch",
+        "Includes": [
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\debuggame\\topdownshmup\\definitions.topdownshmup.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\source\\topdownshmup\\topdownshmupcharacter.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\source\\topdownshmup\\weapon.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\inc\\topdownshmup\\weapon.generated.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\inc\\topdownshmup\\topdownshmupcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
