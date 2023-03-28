@@ -2,6 +2,7 @@
 
 #include "TopDownShmupPlayerController.h"
 #include "TopDownShmup.h"
+#include "Weapon.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 
 ATopDownShmupPlayerController::ATopDownShmupPlayerController()

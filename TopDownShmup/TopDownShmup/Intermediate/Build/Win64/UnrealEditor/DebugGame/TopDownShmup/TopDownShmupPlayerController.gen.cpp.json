@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\inc\\topdownshmup\\topdownshmupplayercontroller.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\topdownshmupeditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.h.pch",
+        "Includes": [
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\debuggame\\topdownshmup\\definitions.topdownshmup.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\source\\topdownshmup\\topdownshmupplayercontroller.h",
+            "c:\\users\\jmfra\\documents\\firstrepo\\topdownshmup\\topdownshmup\\intermediate\\build\\win64\\unrealeditor\\inc\\topdownshmup\\topdownshmupplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
