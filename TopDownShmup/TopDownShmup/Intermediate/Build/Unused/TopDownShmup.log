@@ -1,24 +1,4 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\jmfra\AppData\Local\UnrealBuildTool\Log.txt
-  Building TopDownShmupEditor...
-  Using Visual Studio 2019 14.29.30148 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Upgrade]
-  [Upgrade] Using backward-compatible build settings. The latest version of UE sets the following values by default, which may require code changes:
-  [Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
-  [Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
-  [Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
-  [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in TopDownShmupEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
-  [Upgrade]
-  [Adaptive Build] Excluded from TopDownShmup unity file: AssaultWeapon.cpp, TopDownShmup.cpp, TopDownShmupCharacter.cpp, TopDownShmupGameMode.cpp, TopDownShmupPlayerController.cpp, Weapon.cpp
-  Determining max actions to execute in parallel (4 physical cores, 8 logical cores)
-    Executing up to 4 processes, one per physical core
-    Requested 1.5 GB free memory per action, 3.32 GB available: limiting max parallel actions to 2
-  Building 4 actions with 2 processes...
-  [1/4] Compile Weapon.cpp
-  [2/4] Link UnrealEditor-TopDownShmup.lib
-     Creating library C:\Users\jmfra\Documents\FirstRepo\TopDownShmup\TopDownShmup\Intermediate\Build\Win64\UnrealEditor\Development\TopDownShmup\UnrealEditor-TopDownShmup.lib and object C:\Users\jmfra\Documents\FirstRepo\TopDownShmup\TopDownShmup\Intermediate\Build\Win64\UnrealEditor\Development\TopDownShmup\UnrealEditor-TopDownShmup.exp
-  [3/4] Link UnrealEditor-TopDownShmup.dll
-     Creating library C:\Users\jmfra\Documents\FirstRepo\TopDownShmup\TopDownShmup\Intermediate\Build\Win64\UnrealEditor\Development\TopDownShmup\UnrealEditor-TopDownShmup.suppressed.lib and object C:\Users\jmfra\Documents\FirstRepo\TopDownShmup\TopDownShmup\Intermediate\Build\Win64\UnrealEditor\Development\TopDownShmup\UnrealEditor-TopDownShmup.suppressed.exp
-  [4/4] WriteMetadata TopDownShmupEditor.target
-  Total time in Parallel executor: 22.97 seconds
-  Total execution time: 23.67 seconds
+  Target is up to date
+  Total execution time: 0.65 seconds
