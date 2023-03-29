@@ -1,6 +1,7 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
 #pragma once
 #include "GameFramework/PlayerController.h"
+#include "TopDownShmupCharacter.h"
 #include "TopDownShmupPlayerController.generated.h"
 
 UCLASS()
@@ -15,6 +16,9 @@ public:
 	void MoveRight(float Value);
 
 	void UpdateMouseLook();
+    
+    void OnStartFire(); // override?virtual?
+    void OnStopFire();
 
 protected:
 	/** True if the controlled character should navigate to the mouse cursor. */
@@ -34,10 +38,13 @@ protected:
 	
 	/** Navigate player to the given world location. */
 	void SetNewMoveDestination(const FVector DestLocation);
-
+    //**told to delete these page 9*** 
 	/** Input handlers for SetDestination action. */
-	void OnSetDestinationPressed();
-	void OnSetDestinationReleased();
+	//void OnSetDestinationPressed();
+	//void OnSetDestinationReleased();
+    
+    
+    
 };
 
 

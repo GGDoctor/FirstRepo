@@ -11,6 +11,7 @@
 
 #include "CoreMinimal.h"
 #include "Weapon.h"
+#include "Kismet/GameplayStatics.h"
 #include "AssaultWeapon.generated.h"
 
 UCLASS()
@@ -20,4 +21,19 @@ class TOPDOWNSHMUP_API AAssaultWeapon : public AWeapon
 
 	virtual void OnStartFire() override;
 	virtual void OnStopFire() override;
+    
+    UPROPERTY(EditAnywhere)
+    float FireRate;
+    
+    UPROPERTY(EditAnywhere)
+    float WeaponRange;
+    
+    UPROPERTY(EditDefaultsOnly, Category=Effects)
+    UParticleSystem* HitEffect;
+public:
+    AAssaultWeapon();
+    
+protected:
+    
+    void WeaponTrace(); 
 };

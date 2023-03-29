@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "TopDownShmup",
-			"Path": "C:\\Users\\jmfra\\Documents\\FirstRepo\\TopDownShmup\\TopDownShmup\\Source\\TopDownShmup.Target.cs",
+			"Path": "/Users/jacobsellers 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmup.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "TopDownShmupEditor",
-			"Path": "C:\\Users\\jmfra\\Documents\\FirstRepo\\TopDownShmup\\TopDownShmup\\Source\\TopDownShmupEditor.Target.cs",
+			"Path": "/Users/jacobsellers 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmupEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -31,6 +31,7 @@ ATopDownShmupCharacter::ATopDownShmupCharacter()
 	TopDownCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("TopDownCamera"));
 	TopDownCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	TopDownCameraComponent->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+    
 
 }
 void ATopDownShmupCharacter::BeginPlay()
@@ -60,7 +61,23 @@ void ATopDownShmupCharacter::BeginPlay()
 				//NOTE: This should probably be a blueprint parameter
 				MyWeapon->WeaponMesh->AttachToComponent(GetMesh(),
 					FAttachmentTransformRules(EAttachmentRule::KeepRelative, true), TEXT("WeaponPoint"));
+                MyWeapon->MyPawn = this;
 			}
 		}
 	}
+}
+
+
+void ATopDownShmupCharacter::OnStartFire(){
+    if (MyWeapon)
+    {
+        MyWeapon->OnStartFire();
+    }
+}
+
+void ATopDownShmupCharacter::OnStopFire(){
+    if (MyWeapon)
+    {
+        MyWeapon->OnStopFire();
+    }
 }

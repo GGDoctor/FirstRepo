@@ -20,6 +20,9 @@ class ATopDownShmupCharacter : public ACharacter
 public:
 	UPROPERTY(EditAnywhere, Category = Weapon)
 	TSubclassOf<AWeapon> WeaponClass;
+    
+    void OnStartFire(); // **might need to b virtual
+    void OnStopFire();
 private:
 	AWeapon* MyWeapon;
 public:
@@ -33,6 +36,8 @@ public:
 protected:
 	//Called to override BeginPlay
 	virtual void BeginPlay()override;
+    
+    
 
 };
 

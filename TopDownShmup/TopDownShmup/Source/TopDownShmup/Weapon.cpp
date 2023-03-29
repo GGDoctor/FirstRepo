@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "Kismet/GameplayStatics.h"
 #include "Weapon.h"
 
 // Sets default values
@@ -10,6 +10,7 @@ AWeapon::AWeapon()
 	PrimaryActorTick.bCanEverTick = true;
 	WeaponMesh=CreateDefaultSubobject<USkeletalMeshComponent>("WeaponMesh");
 	RootComponent = WeaponMesh;
+
 }
 
 // Called when the game starts or when spawned
@@ -26,10 +27,25 @@ void AWeapon::Tick(float DeltaTime)
 
 }
 
+UAudioComponent* AWeapon::PlayWeaponSound(USoundCue* Sound)
+{
+    UAudioComponent* AC = NULL;
+    if (Sound)
+    {
+        AC = UGameplayStatics::SpawnSoundAttached(Sound, RootComponent);
+    }
+    return AC;
+}
+
 //Added and empty 
 void AWeapon::OnStartFire()
 {
+    MuzzleVC = UGameplayStatics::SpawnEmitterAttached(MuzzleFX, RootComponent, TEXT("MuzzleFlashSocket"));
+    FireAC = PlayWeaponSound(FireLoopSound);
 }
+
 void AWeapon::OnStopFire()
 {
+    FireAC->Stop();
+    MuzzleVC->DeactivateSystem();
 }
