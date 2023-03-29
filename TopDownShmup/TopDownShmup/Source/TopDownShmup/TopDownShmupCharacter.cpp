@@ -67,7 +67,6 @@ void ATopDownShmupCharacter::BeginPlay()
 	}
 }
 
-
 void ATopDownShmupCharacter::OnStartFire(){
     if (MyWeapon)
     {

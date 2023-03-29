@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Kismet/GameplayStatics.h"
 #include "Weapon.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AWeapon::AWeapon()
@@ -47,5 +47,6 @@ void AWeapon::OnStartFire()
 void AWeapon::OnStopFire()
 {
     FireAC->Stop();
+    PlayWeaponSound(FireFinishSound);
     MuzzleVC->DeactivateSystem();
 }

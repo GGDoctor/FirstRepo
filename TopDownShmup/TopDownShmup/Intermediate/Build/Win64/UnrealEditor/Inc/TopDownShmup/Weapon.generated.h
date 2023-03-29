@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TOPDOWNSHMUP_Weapon_generated_h
 
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_SPARSE_DATA
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_RPC_WRAPPERS
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_SPARSE_DATA
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_RPC_WRAPPERS
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeapon(); \
 	friend struct Z_Construct_UClass_AWeapon_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AWeapon)
 
 
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_INCLASS \
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAWeapon(); \
 	friend struct Z_Construct_UClass_AWeapon_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AWeapon)
 
 
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_STANDARD_CONSTRUCTORS \
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWeapon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWeapon) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AWeapon(AWeapon&&); \
@@ -58,25 +58,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AWeapon)
 
 
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_9_PROLOG
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_GENERATED_BODY_LEGACY \
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_PROLOG
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_SPARSE_DATA \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_RPC_WRAPPERS \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_INCLASS \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_STANDARD_CONSTRUCTORS \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_SPARSE_DATA \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_RPC_WRAPPERS \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_INCLASS \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_GENERATED_BODY \
+#define FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_SPARSE_DATA \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_INCLASS_NO_PURE_DECLS \
-	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_12_ENHANCED_CONSTRUCTORS \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_SPARSE_DATA \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_INCLASS_NO_PURE_DECLS \
+	FID_TopDownShmup_Source_TopDownShmup_Weapon_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

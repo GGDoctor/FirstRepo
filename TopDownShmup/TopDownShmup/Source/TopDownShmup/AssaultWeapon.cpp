@@ -16,10 +16,13 @@ AAssaultWeapon::AAssaultWeapon()
 void AAssaultWeapon::OnStartFire()
 {
 	Super::OnStartFire();
+    GetWorldTimerManager().SetTimer(Timer, this,
+        &AAssaultWeapon::WeaponTrace, FireRate, true);
 }
 void AAssaultWeapon::OnStopFire()
 {
 	Super::OnStopFire();
+    GetWorldTimerManager().ClearTimer(Timer);
 }
 
 void AAssaultWeapon::WeaponTrace(){
@@ -33,18 +36,18 @@ void AAssaultWeapon::WeaponTrace(){
     FVector Forward = MyPawn->GetActorForwardVector();
     
     // Calculate end position
-    FVector EndPos = StartPos + (Forward * WeaponRange);;
+    FVector EndPos = StartPos + (Forward * WeaponRange);
     
     // Perform line trace to retrieve hit info
     FCollisionQueryParams TraceParams(WeaponFireTag, true, GetInstigator());
     
     // This fires the ray and checks against all objects w/ collision
     FHitResult Hit(ForceInit);
-    GetWorld()->LineTraceSingleByObjectType(Hit, StartPos, EndPos,
+    GetWorld()->LineTraceSingleByObjectType(Hit, StartPos,EndPos,
     FCollisionObjectQueryParams::AllObjects, TraceParams);
     // Did this hit anything?
     if (Hit.bBlockingHit)
    {
-       UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitEffect, EndPos);
+       UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitEffect, Hit.ImpactPoint);
    }
 }

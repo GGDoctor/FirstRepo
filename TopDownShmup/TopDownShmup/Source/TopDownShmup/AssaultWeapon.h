@@ -30,6 +30,8 @@ class TOPDOWNSHMUP_API AAssaultWeapon : public AWeapon
     
     UPROPERTY(EditDefaultsOnly, Category=Effects)
     UParticleSystem* HitEffect;
+
+    FTimerHandle Timer;
 public:
     AAssaultWeapon();
     
