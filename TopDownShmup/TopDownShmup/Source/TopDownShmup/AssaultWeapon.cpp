@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "AssaultWeapon.h"
+#include "DwarfCharacter.h"
 
 
 AAssaultWeapon::AAssaultWeapon()
@@ -49,5 +49,12 @@ void AAssaultWeapon::WeaponTrace(){
     if (Hit.bBlockingHit)
    {
        UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitEffect, Hit.ImpactPoint);
+       
+       ADwarfCharacter* Dwarf = Cast <ADwarfCharacter>(Hit.GetActor());
+       if (Dwarf)
+       {
+           GEngine->AddOnScreenDebugMessage(1, 2.f, FColor::Purple, FString::Printf(TEXT("HIT")));
+           Dwarf->TakeDamage(1, FDamageEvent(), GetInstigatorController(), this);
+       }
    }
 }

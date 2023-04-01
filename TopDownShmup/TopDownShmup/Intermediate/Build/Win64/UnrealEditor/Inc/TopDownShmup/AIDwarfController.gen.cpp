@@ -28,6 +28,11 @@ void EmptyLinkFunctionForGeneratedCodeAIDwarfController() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DwarfRange_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_DwarfRange;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -37,12 +42,21 @@ void EmptyLinkFunctionForGeneratedCodeAIDwarfController() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIDwarfController_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Transformation" },
 		{ "IncludePath", "AIDwarfController.h" },
 		{ "ModuleRelativePath", "AIDwarfController.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange_MetaData[] = {
+		{ "Category", "AIDwarfController" },
+		{ "ModuleRelativePath", "AIDwarfController.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange = { "DwarfRange", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAIDwarfController, DwarfRange), METADATA_PARAMS(Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange_MetaData)) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAIDwarfController_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAIDwarfController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AAIDwarfController>::IsAbstract,
 	};
@@ -52,11 +66,11 @@ void EmptyLinkFunctionForGeneratedCodeAIDwarfController() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AAIDwarfController_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AAIDwarfController_Statics::PropPointers),
 		0,
 		0x009002A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AAIDwarfController_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AAIDwarfController_Statics::Class_MetaDataParams))
@@ -79,9 +93,9 @@ void EmptyLinkFunctionForGeneratedCodeAIDwarfController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAIDwarfController, AAIDwarfController::StaticClass, TEXT("AAIDwarfController"), &Z_Registration_Info_UClass_AAIDwarfController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIDwarfController), 2710576330U) },
+		{ Z_Construct_UClass_AAIDwarfController, AAIDwarfController::StaticClass, TEXT("AAIDwarfController"), &Z_Registration_Info_UClass_AAIDwarfController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIDwarfController), 2029023667U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_2369780631(TEXT("/Script/TopDownShmup"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_3076567949(TEXT("/Script/TopDownShmup"),
 		Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

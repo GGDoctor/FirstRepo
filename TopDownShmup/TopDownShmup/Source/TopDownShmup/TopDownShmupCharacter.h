@@ -20,11 +20,32 @@ class ATopDownShmupCharacter : public ACharacter
 public:
 	UPROPERTY(EditAnywhere, Category = Weapon)
 	TSubclassOf<AWeapon> WeaponClass;
+
+	UPROPERTY(EditAnywhere)
+		float Health = 100.f;
+
+	UPROPERTY(EditDefaultsOnly)
+		UAnimMontage* DeathAnim;
     
+	float deathTimer = 0.f;
+
+
+	FTimerHandle TimerHandle;
+	USkeletalMeshComponent* PlayerSkeletalMesh;
+	UStaticMeshComponent* PlayerMesh;
+	ACharacter* PlayerCharacter;
+
+	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent,
+		AController* EventInstigator, AActor* DamageCauser) override;
+	bool alive = true;
+	bool isDead();
+	APlayerController* PlayerController;
+
     void OnStartFire(); // **might need to b virtual
     void OnStopFire();
 private:
 	AWeapon* MyWeapon;
+	APawn* PlayerActor;
 public:
 	ATopDownShmupCharacter();
 
