@@ -17,12 +17,6 @@ void ATopDownShmupPlayerController::PlayerTick(float DeltaTime)
 
 	UpdateMouseLook();
 
-	// keep updating the destination every tick while desired
-	/*if (bMoveToMouseCursor)
-	{
-		MoveToMouseCursor();
-	}
-	*/
 }
 
 void ATopDownShmupPlayerController::SetupInputComponent()

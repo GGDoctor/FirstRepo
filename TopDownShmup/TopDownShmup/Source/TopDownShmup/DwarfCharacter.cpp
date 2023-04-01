@@ -9,6 +9,8 @@ ADwarfCharacter::ADwarfCharacter()
 {
 	AIControllerClass = AAIDwarfController::StaticClass();
 }
+
+
 float ADwarfCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent,
 	AController* EventInstigator, AActor* DamageCauser)
 {
@@ -28,10 +30,9 @@ float ADwarfCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 			StopAttack();
 			//play death anim
 			deathLength = PlayAnimMontage(DeathAnim);
-			deathLength -= 0.25f;
-			//timer to delay destroy till animation length goes through
-			GetWorldTimerManager().SetTimer(TimerHandle, this, &ADwarfCharacter::DestroyAfterAnim, deathLength, false);
-
+            //PlayerActor->GetController()->UnPossess();
+            //this->DestroyAfterAnim(); // might b wrong
+            
 		}
 	}
 	return ActualDamage;
@@ -42,11 +43,11 @@ void ADwarfCharacter::StartAttack()
 {
 	PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	//looping timer
-	attackLength = PlayAnimMontage(AttackAnim);
+	AttackLength = PlayAnimMontage(AttackAnim);
 
 	GetWorldTimerManager().SetTimer(CountdownTimerHandle,
-		[this]() { PlayerActor->TakeDamage(damage, FDamageEvent(),
-			GetInstigatorController(), this); }, attackLength, true);
+		[this]() { PlayerActor->TakeDamage(Damage, FDamageEvent(),
+			GetInstigatorController(), this); }, AttackLength, true);
 }
 
 

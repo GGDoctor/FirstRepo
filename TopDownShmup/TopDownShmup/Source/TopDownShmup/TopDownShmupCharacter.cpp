@@ -122,10 +122,10 @@ float ATopDownShmupCharacter::TakeDamage(float Damage, FDamageEvent const& Damag
 			alive = false;
 			PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
 			PlayerCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
-			//get skeletalmesh so we can deactivate/freeze it
+			//get skeletalmesh so we can remove it
 			PlayerSkeletalMesh = Cast<USkeletalMeshComponent>(PlayerCharacter->GetComponentByClass(USkeletalMeshComponent::StaticClass()));
-			//we are dead
-			//ignore inputs
+			//we are dead so
+			//ignore the inputs
 			MyWeapon->OnStopFire();
 			PlayerController->SetIgnoreLookInput(true);
 			PlayerController->SetIgnoreMoveInput(true);

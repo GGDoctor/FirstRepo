@@ -28,6 +28,9 @@ class TOPDOWNSHMUP_API AAssaultWeapon : public AWeapon
     UPROPERTY(EditAnywhere)
     float WeaponRange;
     
+    UPROPERTY(EditAnywhere)
+    float WeaponDamage = 2.f;
+    
     UPROPERTY(EditDefaultsOnly, Category=Effects)
     UParticleSystem* HitEffect;
 

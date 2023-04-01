@@ -27,23 +27,27 @@ class TOPDOWNSHMUP_API AAIDwarfController : public AAIEnemyController
 	ADwarfCharacter* DwarfChar;
 	ATopDownShmupCharacter* Player;
 
-
+    //Dwarf getter/setters
 	EDwarfState GetCurrentState() const;
 	void SetCurrentState(EDwarfState NewState);
 
+    //range for the ai to start attacking player
 	UPROPERTY(EditAnywhere)
 		float DwarfRange = 150.0f;
 
+    //overriden functions
 	virtual void OnPossess(APawn* InPawn) override;
 	virtual void BeginPlay() override;
 	virtual void OnMoveCompleted(FAIRequestID RequestID, EPathFollowingResult::Type Result) override;
 
 	virtual void Tick(float DeltaTime) override;
 	virtual void OnUnPossess() override;
+    
 private:
 	/*Keeps Track of the current state*/
 	EDwarfState CurrentState;
 	/*Handle any function calls that rely on changing the play state of our game*/
 	void HandleNewState(EDwarfState NewState);
+    
 	void MoveDwarf();
 };

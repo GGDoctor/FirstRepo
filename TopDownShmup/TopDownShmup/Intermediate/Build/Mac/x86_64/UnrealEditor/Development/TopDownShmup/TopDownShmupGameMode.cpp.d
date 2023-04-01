@@ -1,4 +1,4 @@
-/Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/TopDownShmup/TopDownShmupGameMode.cpp.o: \
+/Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/TopDownShmup/TopDownShmupGameMode.cpp.o: \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SoundWave.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CanvasTypes.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/CanvasTypes.h \
@@ -1498,7 +1498,7 @@
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/HAL/Platform.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/Containers/ContainersFwd.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/TopDownShmupEditor/Development/Engine/SharedPCH.Engine.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/TopDownShmupEditor/Development/Engine/SharedPCH.Engine.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stddef.h \
@@ -2922,17 +2922,17 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cmath \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupGameMode.cpp \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/TopDownShmup/Definitions.TopDownShmup.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupGameMode.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupGameMode.cpp \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/TopDownShmup/Definitions.TopDownShmup.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupGameMode.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/GameMode.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/GameModeBase.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/ServerStatReplicator.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/GameModeBase.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/GameMode.generated.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/TopDownShmupGameMode.generated.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmup.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/TopDownShmupGameMode.generated.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmup.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/EngineMinimal.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/Misc/MonolithicHeaderBoilerplate.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/CoreUObject/Public/CoreUObject.h \
@@ -3122,13 +3122,13 @@
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStaticsTypes.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/GameplayStaticsTypes.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/GameplayStatics.generated.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupPlayerController.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupCharacter.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Source/TopDownShmup/Weapon.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupPlayerController.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Source/TopDownShmup/TopDownShmupCharacter.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Source/TopDownShmup/Weapon.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Sound/SoundCue.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Sound/SoundNode.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SoundNode.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SoundCue.generated.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/Weapon.generated.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/TopDownShmupCharacter.generated.h \
-  /Users/jacobsellers\ 1/Documents/FirstRepo1/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/TopDownShmupPlayerController.generated.h
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/Weapon.generated.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/TopDownShmupCharacter.generated.h \
+  /Users/jacobsellers\ 1/Documents/WorkingRepo/TopDownShmup/TopDownShmup/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/TopDownShmup/TopDownShmupPlayerController.generated.h

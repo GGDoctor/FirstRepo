@@ -8,7 +8,7 @@ void AAIDwarfController::BeginPlay()
 	Super::BeginPlay();
 	SetCurrentState(EDwarfState::EStart);
 	MoveDwarf();
-	Player = Cast<ATopDownShmupCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+	Player = Cast<ATopDownShmupCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)); //possesed pawn cast to character
 }
 
 
@@ -19,11 +19,16 @@ void AAIDwarfController::Tick(float DeltaTime)
 	{
 		SetCurrentState(EDwarfState::EChasing);
 	}
+    if ((PlayerActor->GetDistanceTo(MyPawn) <= DwarfRange)) // when dwarf is attacking
+    {
+        SetCurrentState(EDwarfState::EAttacking);
+        DwarfChar->StartAttack(); //make dwarf chase character again
+    }
 
 	if (GetCurrentState() == EDwarfState::EAttacking &&
-		(PlayerActor->GetDistanceTo(MyPawn) > DwarfRange))
+		(PlayerActor->GetDistanceTo(MyPawn) > DwarfRange)) // when dwarf is attacking and player runs away
 	{
-		SetCurrentState(EDwarfState::EChasing);
+		SetCurrentState(EDwarfState::EChasing); //make dwarf chase character again
 	}
 	if (Player)
 	{
@@ -32,7 +37,7 @@ void AAIDwarfController::Tick(float DeltaTime)
 			if (GetCurrentState() == EDwarfState::EAttacking)
 			{
 				DwarfChar->StopAttack();
-				SetCurrentState(EDwarfState::EUnknown);
+				SetCurrentState(EDwarfState::EUnknown); //default state. player is dead game over
 			}
 			return;
 		}
@@ -45,7 +50,7 @@ void AAIDwarfController::MoveDwarf()
 	{
 		DwarfChar->StopAttack();
 		PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-		MoveToActor(PlayerActor, 5.0f);
+		MoveToActor(PlayerActor);
 	}
 }
 
@@ -63,6 +68,7 @@ void AAIDwarfController::OnMoveCompleted(FAIRequestID RequestID, EPathFollowingR
 	if (!Player->isDead())
 	{
 		SetCurrentState(EDwarfState::EAttacking);
+        DwarfChar->StartAttack(); 
 	}
 	GEngine->AddOnScreenDebugMessage(1, 2.f, FColor::Yellow, FString::Printf(TEXT("move completed")));
 }
@@ -85,34 +91,36 @@ void AAIDwarfController::SetCurrentState(EDwarfState NewState)
 void AAIDwarfController::HandleNewState(EDwarfState NewState)
 {
 	switch (NewState)
-	{
-	case EDwarfState::EStart:
-		break;
+    {
+        case EDwarfState::EStart:
+            break;
 
-	case EDwarfState::EChasing:
-	{
-		if (this)
-		{
-			MoveDwarf();
-		}
-	}
-	break;
-	case EDwarfState::EAttacking:
-	{
-		if (DwarfChar)
-		{
-			DwarfChar->StartAttack();
-		}
-	}
-	break;
-	case EDwarfState::EDead:
-
-	default:
-	case EDwarfState::EUnknown:
-	{
-		DwarfChar->StopAttack();
-	}
-	break;
+        case EDwarfState::EChasing:
+        {
+            if (this)
+            {
+                MoveDwarf();
+            }
+        }
+        break;
+        case EDwarfState::EAttacking:
+        {
+            if (DwarfChar)
+            {
+                DwarfChar->StartAttack();
+            }
+        }
+        break;
+        case EDwarfState::EDead:
+        {
+            //kill the dwarf
+        }
+        default:
+        case EDwarfState::EUnknown:
+        {
+            DwarfChar->StopAttack();
+        }
+        break;
 	}
 }
 
