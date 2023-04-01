@@ -38,10 +38,34 @@
     <Filter Include="Source\TopDownShmup">
       <UniqueIdentifier>{EC1B3F59-428C-36C7-BA0E-5248DAAFB716}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TopDownShmup\AIDwarfController.cpp">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopDownShmup\AIDwarfController.h">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TopDownShmup\AIEnemyController.cpp">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopDownShmup\AIEnemyController.h">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\TopDownShmup\AssaultWeapon.cpp">
       <Filter>Source\TopDownShmup</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\TopDownShmup\AssaultWeapon.h">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TopDownShmup\DwarfCharacter.cpp">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopDownShmup\DwarfCharacter.h">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TopDownShmup\EnemyCharacter.cpp">
+      <Filter>Source\TopDownShmup</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TopDownShmup\EnemyCharacter.h">
       <Filter>Source\TopDownShmup</Filter>
     </ClInclude>
     <None Include="..\..\Source\TopDownShmup\TopDownShmup.Build.cs">

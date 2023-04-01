@@ -40,8 +40,8 @@ UAudioComponent* AWeapon::PlayWeaponSound(USoundCue* Sound)
 //Added and empty 
 void AWeapon::OnStartFire()
 {
-    MuzzleVC = UGameplayStatics::SpawnEmitterAttached(MuzzleFX, RootComponent, TEXT("MuzzleFlashSocket"));
     FireAC = PlayWeaponSound(FireLoopSound);
+    MuzzleVC = UGameplayStatics::SpawnEmitterAttached(MuzzleFX, RootComponent, TEXT("MuzzleFlashSocket"));
 }
 
 void AWeapon::OnStopFire()
