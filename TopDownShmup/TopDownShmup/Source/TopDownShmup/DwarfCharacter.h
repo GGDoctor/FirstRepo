@@ -6,7 +6,7 @@
 #include "EnemyCharacter.h"
 #include "DwarfCharacter.generated.h"
 
-/**
+/*
  * 
  */
 UCLASS()

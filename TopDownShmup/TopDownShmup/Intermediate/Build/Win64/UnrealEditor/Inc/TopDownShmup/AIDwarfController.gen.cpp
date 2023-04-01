@@ -50,7 +50,9 @@ void EmptyLinkFunctionForGeneratedCodeAIDwarfController() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange_MetaData[] = {
 		{ "Category", "AIDwarfController" },
+		{ "Comment", "//range for the ai to start attacking player\n" },
 		{ "ModuleRelativePath", "AIDwarfController.h" },
+		{ "ToolTip", "range for the ai to start attacking player" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange = { "DwarfRange", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAIDwarfController, DwarfRange), METADATA_PARAMS(Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAIDwarfController_Statics::NewProp_DwarfRange_MetaData)) };
@@ -93,9 +95,9 @@ void EmptyLinkFunctionForGeneratedCodeAIDwarfController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAIDwarfController, AAIDwarfController::StaticClass, TEXT("AAIDwarfController"), &Z_Registration_Info_UClass_AAIDwarfController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIDwarfController), 2029023667U) },
+		{ Z_Construct_UClass_AAIDwarfController, AAIDwarfController::StaticClass, TEXT("AAIDwarfController"), &Z_Registration_Info_UClass_AAIDwarfController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIDwarfController), 849339005U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_3076567949(TEXT("/Script/TopDownShmup"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_3557722919(TEXT("/Script/TopDownShmup"),
 		Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_TopDownShmup_Source_TopDownShmup_AIDwarfController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

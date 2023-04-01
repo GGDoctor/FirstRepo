@@ -30,8 +30,8 @@ float ADwarfCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 			StopAttack();
 			//play death anim
 			deathLength = PlayAnimMontage(DeathAnim);
-            //PlayerActor->GetController()->UnPossess();
-            //this->DestroyAfterAnim(); // might b wrong
+            PlayerActor->GetController()->UnPossess();
+            this->DestroyAfterAnim(); // might b wrong
             
 		}
 	}
